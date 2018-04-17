@@ -28,9 +28,9 @@ app.use((err, req, res, next) => {
   res.status(err.status || 404);
   res.json({
       [err.message] : "Sorry. Either the endpoint entered is invalid, or something has gone wrong. Valid endpoints for consuming this API are listed below.",
-      "Help/Usage" : "http://localhost:3000/",
-      "GET All Items" : "http://localhost:3000/items",
-      "GET Item By Name" : "http://localhost:3000/items/:itemName"
+      "Help/Usage" : "https://bk-poc-api.herokuapp.com/",
+      "GET All Items" : "https://bk-poc-api.herokuapp.com/items",
+      "GET Item By Name" : "https://bk-poc-api.herokuapp.com/items/{itemName}"
   });
 });
 
