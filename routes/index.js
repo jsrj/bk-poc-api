@@ -7,8 +7,14 @@ const router  = express.Router();
 /* GET API Root */
 router.get('/', (req, res, next) => {
   res.json({
-    "GET All Items" : "http://localhost:3000/items",
-    "GET Item By Name" : "http://localhost:3000/items/{itemName}"
+    "GET All Items" : {
+      URL : "http://localhost:3000/items",
+      Description : "Returns an aggregated list of all products and their corresponding inventory in JSON format."
+    },
+    "GET Item By Name" : {
+      URL : "http://localhost:3000/items/{itemName}",
+      Description : "Returns the aggregated name, price, and inventory count of a specific item who's name is entered into the area occupied by the {itemName} placeholder."
+    }
   });
 });
 
