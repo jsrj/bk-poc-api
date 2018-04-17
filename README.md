@@ -17,5 +17,5 @@ GET All Items
 
 GET Item By Name
 * URL: `https://bk-poc-api.herokuapp.com/items/{itemName}`
-* <em>Description:</em> Returns a specific item by item name (or an error message if no item by that name exists), where the ```{itemName}``` placeholder would be where the desired item's name.
+* <em>Description:</em> Returns a specific item by item name (or an error message if no item by that name exists), where the ```{itemName}``` placeholder would be the desired item's name.
  
